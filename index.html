@@ -300,7 +300,7 @@
                     {(question.id == 4 || question.id ==9 || question.id == 12)  ? <h4>Great Job! Here's another cookie!<br/></h4>:null}
                     {(question.id == 3 || question.id == 4 || question.id ==9 || question.id == 12)  ? <h4 className="center">{this.state.cookieList1[quoteIndex]}<br/></h4>:null}
                     {question.id == 12 ? <h3>Get Brilliant<br /></h3>:null}
-                    {question.id == 12 ? <h4 name="Quote">“But the greatest thing by far is to be a master of metaphor. It is the one thing that cannot be learnt from others; and it is also a sign of genius, since a good metaphor implies an intuitive perception of the similarity in dissimilars.” -Aristotle<br/></h4> : null}
+                    {question.id == 12 ? <h4 name="Quote" className="center">“But the greatest thing by far is to be a master of metaphor. It is the one thing that cannot be learnt from others; and it is also a sign of genius, since a good metaphor implies an intuitive perception of the similarity in dissimilars.” -Aristotle<br/></h4> : null}
                     {question.id == 11 ? <span name="userQuote">{this.state.prompt}</span> : null}
                     {question.id == 2 ? <span>{adjQ}<br/></span>:<span>{question.label}<br /></span>}
                     {question.id == 4 ? <span name="userQuote">{this.state.userSen1+":"}</span> : null}
@@ -325,7 +325,6 @@
                     {question.id == 15  ? <h1 className="center">Get Writing!<br/></h1>:null}
                     {question.id == 15  ? <h5 className="center">Not feeling ready yet? Play again!<br/></h5>:null}
                     {question.id == 15 ? <div className="button-parent"><a id="refreshBtn" href="https://museboot.netlify.app/" type="button">Restart</a></div> : null}
-
                 </div>
                 ))}
             </div>
